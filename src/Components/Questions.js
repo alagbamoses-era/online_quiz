@@ -1,4 +1,4 @@
-data =
+export const data =
 [
 {
 question: "When Mary became pregnant, Mary and Joseph were:",
