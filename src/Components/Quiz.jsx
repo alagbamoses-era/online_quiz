@@ -3,12 +3,13 @@ import '../css/Quiz.css';
 import {data} from './Questions'
 import NavBar from './NavBar';
 
+
 export const Quiz = () => {
 
     const [index, setIndex] = useState(0);
     const [question, setQuestion] = useState(data[index]);
     const [lock, setLock] = useState(false);
-    const [score, SetScore] =  useState(0);
+    const [score, setScore] =  useState(0);
     const [result, setResult] = useState(false)
 
     let Option1 = useRef(null);
@@ -23,10 +24,12 @@ export const Quiz = () => {
             if (question.ans === q_ans) {
                 e.target.classList.add("correct");
                 setLock(true)
+                setScore(prev => prev +1)
 
             } else {
                 e.target.classList.add("wrong")
                 setLock(true)
+                option_array[question.ans-1].current.classList.add("correct")
             }
         }
     }
@@ -38,7 +41,7 @@ export const Quiz = () => {
                 return 0
 
             }
-            setIndex(index +1)
+            setIndex(index + 1 )
             setQuestion(data[index])
             setLock(false);
             option_array.map((option) => {
@@ -48,22 +51,24 @@ export const Quiz = () => {
 
             })
 
-        }
-        
-        
-            
-        
-
-        
+        }  
+    }
+    const reset = () => {
+        setIndex(0);
+        setQuestion(data[0]);
+        setScore(0);
+        setLock(false);
+        setResult(false)
     }
 
     return (
         <>
         <NavBar />
         <div className='container'>
-            <div className='question-app'>
+            
             <h1>Bible Quiz App</h1>
             <hr />
+            {result? <></>:<>
             <h2>{index + 1}. {question.question}</h2>
             <ul>
                 <li ref={Option1} onClick={((e) => {checkAns(e, 1)})}>{question.option1}</li>
@@ -71,10 +76,19 @@ export const Quiz = () => {
                 <li ref={Option3} onClick={((e) => {checkAns(e, 3)})}>{question.option3}</li>
                 <li ref={Option4} onClick={((e) => {checkAns(e, 4)})}>{question.option4}</li>
             </ul>
-            <h2 className='index'>{index +1} of {data.length} questions</h2>
             <button onClick={next}>Next</button>
-            </div>
+
+            <div className='index'>
+                <h2>{index +1} of {data.length} questions</h2>
+                </div>
+            
+            
+            </>}
+            {result? <>
+            <h2>You scored {score} out of {data.length}`</h2>
+            <button onClick={reset}>Reset</button>
+            </>: <></>}
         </div>
-        </>
+    </>    
     )
-}
+    }
