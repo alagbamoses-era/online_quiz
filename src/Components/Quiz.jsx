@@ -1,6 +1,7 @@
 import React, {useState}from 'react';
 import '../css/Quiz.css';
 import {data} from './Questions'
+import NavBar from './NavBar';
 
 export const Quiz = () => {
 
@@ -8,9 +9,11 @@ export const Quiz = () => {
     const [question, setQuestion] = useState(data[index])
 
     return (
+        <>
+        <NavBar />
         <div className='container'>
             <div className='question-app'>
-            <h1>Quiz App</h1>
+            <h1>Bible Quiz App</h1>
             <hr />
             <h2>{index + 1}. {question.question}</h2>
             <ul>
@@ -23,5 +26,6 @@ export const Quiz = () => {
             <button>Next</button>
             </div>
         </div>
+        </>
     )
 }
