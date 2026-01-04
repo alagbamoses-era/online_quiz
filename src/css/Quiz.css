@@ -67,8 +67,19 @@ button {
 
 .home h1, h2 {
     margin: auto;
+    color: #553f9a;
 }
 .home p {
     font-size: 1.5rem;
     justify-content:space-between;
+}
+
+.container .correct {
+    background:#dffff2;
+    border-color: #00d397;
+}
+
+.container .wrong {
+    background: #FFEBEB;
+    border-color: #FF4A4A;
 }
