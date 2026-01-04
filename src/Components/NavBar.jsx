@@ -3,6 +3,7 @@ import '../css/NavBar.css'
 
 function NavBar() {
   return (
+    <div className='header'>
     <nav>
       <div className='logo'>Game</div>
       <ul>
@@ -10,6 +11,7 @@ function NavBar() {
         <li><a href="/quiz">Quiz</a></li>
       </ul>
     </nav>
+    </div>
   )
 }
 

@@ -5,15 +5,21 @@ import NavBar from './NavBar';
 
 export const Quiz = () => {
 
-    const [index, setIndex] = useState(1);
-    const [question, setQuestion] = useState(data[index])
+    const [index, setIndex] = useState(0);
+    const [question, setQuestion] = useState(data[index]);
+    const [lock, setLock] = useState(false);
+
 
     const checkAns = (e, q_ans) => {
-        if (question.ans === q_ans) {
-            e.target.classList.add("correct")
+        if (lock === false) {
+            if (question.ans === q_ans) {
+                e.target.classList.add("correct");
+                setLock(true)
 
-        } else {
-            e.target.classList.add("wrong")
+            } else {
+                e.target.classList.add("wrong")
+                setLock(true)
+            }
         }
     }
 
