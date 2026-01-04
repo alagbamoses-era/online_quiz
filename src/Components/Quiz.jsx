@@ -23,6 +23,16 @@ export const Quiz = () => {
         }
     }
 
+    const next = () => {
+        
+            
+        setIndex(index + 1)
+        setQuestion(data[index])
+        setLock(false)
+
+        
+    }
+
     return (
         <>
         <NavBar />
@@ -38,7 +48,7 @@ export const Quiz = () => {
                 <li onClick={((e) => {checkAns(e, 4)})}>{question.option4}</li>
             </ul>
             <h2 className='index'>{index +1} of {data.length} questions</h2>
-            <button>Next</button>
+            <button onClick={next}>Next</button>
             </div>
         </div>
         </>
