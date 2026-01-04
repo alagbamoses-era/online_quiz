@@ -4,7 +4,7 @@ nav {
   display: flex;
   padding: 0 50px;
   align-items: center;
-  width: 800px;
+
   font-size: 1.5rem;
 }
 nav ul {
@@ -26,4 +26,14 @@ nav a {
     display: flex;
     align-items: center;
 
+}
+
+.logo {
+    color: purple;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 2px solid plum;
+    border-radius: 5px;
+    padding: 6px;
+    box-shadow: 5px 5px 5px black;
 }
