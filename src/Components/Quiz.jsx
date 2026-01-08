@@ -41,8 +41,9 @@ export const Quiz = () => {
                 return 0
 
             }
-            setIndex(index + 1 )
-            setQuestion(data[index])
+            const indexQuest = index + 1
+            setIndex(indexQuest)
+            setQuestion(data[indexQuest])
             setLock(false);
             option_array.map((option) => {
                 option.current.classList.remove("correct")
@@ -69,7 +70,7 @@ export const Quiz = () => {
             <h1>Bible Quiz App</h1>
             <hr />
             {result? <></>:<>
-            <h2>{index + 1}. {question.question}</h2>
+            <h2 className='quiz-question'>{index + 1}. {question.question}</h2>
             <ul>
                 <li ref={Option1} onClick={((e) => {checkAns(e, 1)})}>{question.option1}</li>
                 <li ref={Option2} onClick={((e) => {checkAns(e, 2)})}>{question.option2}</li>

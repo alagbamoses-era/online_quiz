@@ -4,6 +4,11 @@ import { Quiz } from './Quiz'
 
 function Home() {
 
+    const toGoQuiz = () => {
+        return( 
+            <Quiz />
+        )
+    }
 
     return (
         <div className='home'>
@@ -24,7 +29,7 @@ function Home() {
             <br />
             <p>I wish you all the best❤️.</p>
 
-            <button>Go to Quiz</button>
+            <h1><a href="/quiz">Click here to start your quiz</a></h1>
 
         </div>
     )

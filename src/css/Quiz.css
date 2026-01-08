@@ -53,6 +53,7 @@
     font-size: 18px;
     padding-bottom: 20px;
 
+
 }
 button {
     height: 50px;
@@ -82,4 +83,8 @@ button {
 .container .wrong {
     background: #FFEBEB;
     border-color: #FF4A4A;
+}
+
+.home a{
+    text-decoration: none;
 }
