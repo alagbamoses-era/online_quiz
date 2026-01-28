@@ -88,3 +88,18 @@ button {
 .home a{
     text-decoration: none;
 }
+
+@media(max-width: 600px) {
+    .home {
+  background-color: #FFAE42;
+  width: 4000px;
+  margin: auto;
+  padding: 40px 50px;
+  margin-top: 150px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+}

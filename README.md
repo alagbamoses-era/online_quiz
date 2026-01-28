@@ -1,43 +1,64 @@
-# Getting Started with Create React App
+# Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my online Bible Quiz App. This README file provides important information you need to be aware of as wel as how to get started.
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+This Bible quiz game reveals the essence of celebrating the birth of Jesus Christ at Christmas and also shows the depth of understanding of Scriptures about him.
 
-### `npm start`
+## `Target Audience`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*Chritstians
+*Bible readers
+*Any who is curious to know about Jesus Christ
+*Any who want to expores Bible
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## `Features`
+The website exists on only one page with multiple features available to the user
 
-### `npm run build`
+### Menu
+At the top-right hand side of the page, there are 2 naviagation buttons (Home and Quiz) that allow the user to move around the game
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Menu](menu.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Home Page
+The Home page contains game instruction on how the Bible quiz is structured and also has a link to start the quiz.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Game Instruction](game_instruction.png)
 
-### `npm run eject`
+### Quiz Page
+This page shows only one question per time with various types, Some Single Choice, multple choice and open-ended questions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Score
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Please note the scores are only visible to the user untill all the questions are answered. It is good to note that all questions are required or compusory to answer.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `Technologies Used`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**HTML** was used as the foundation of the site.
+**CSS** was used to add the styles and layout of the site.
+**JavaScript** was used to create all the logic and visuals necessary to make the quiz work.
+**VSCode** was used as the main code editor to write and edit code.
+**Git** was used for the version control of the website.
+**GitHub** was used to host the code of the website.
+
+
+## `Testing`
+
+In order to confirm the correct functionality, responsiveness and appearance:
+
+The website was tested on Chrome and Edge web browsers, using in-built dev tools.
+
+*Chrome
+![website](website.png)
+
+*The HTML file has passed HTML validity checks with W3C.
+
+![html](html.png)
+
+
 
 ## Learn More
 
