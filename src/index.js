@@ -9,7 +9,7 @@ import { Quiz } from './Components/Quiz';
 import NoPage from './Components/NoPage';
 
 const router = createBrowserRouter([
-  {path: "/", element: <App /> , errorElement: <NoPage />  },
+  {path: "/online_quiz", element: <App /> , errorElement: <NoPage />  },
   {path: "/quiz", element: <Quiz />}
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
