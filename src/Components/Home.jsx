@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/Quiz.css'
 import { Quiz } from './Quiz'
+import { Link } from 'react-router-dom'
 
 function Home() {
 
@@ -29,7 +30,7 @@ function Home() {
             <br />
             <p>I wish you all the best❤️.</p>
 
-            <h1><a href="/quiz">Click here to start your quiz</a></h1>
+            <h1><Link href="/quiz">Click here to start your quiz</Link></h1>
 
         </div>
     )
