@@ -30,7 +30,7 @@ function Home() {
             <br />
             <p>I wish you all the best❤️.</p>
 
-            <h1><Link href="/quiz">Click here to start your quiz</Link></h1>
+            <h1><Link to="/quiz">Click here to start your quiz</Link></h1>
 
         </div>
     )

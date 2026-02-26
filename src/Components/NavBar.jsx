@@ -8,8 +8,8 @@ function NavBar() {
     <nav>
       <div className='logo'>Game</div>
       <ul>
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/quiz">Quiz</Link></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/quiz">Quiz</Link></li>
       </ul>
     </nav>
     </div>
