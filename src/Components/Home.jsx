@@ -29,7 +29,7 @@ function Home() {
             <br />
             <p>I wish you all the best❤️.</p>
 
-            <h1><a href="/quiz">Click here to start your quiz</a></h1>
+            <h1><a href="/online_quiz/quiz">Click here to start your quiz</a></h1>
 
         </div>
     )

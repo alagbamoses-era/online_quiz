@@ -10,7 +10,7 @@ import NoPage from './Components/NoPage';
 
 const router = createBrowserRouter([
   {path: "/online_quiz", element: <App /> , errorElement: <NoPage />  },
-  {path: "/quiz", element: <Quiz />}
+  {path: "/online_quiz/quiz", element: <Quiz />}
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
