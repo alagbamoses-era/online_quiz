@@ -8,7 +8,7 @@ function NavBar() {
       <div className='logo'>Game</div>
       <ul>
         <li><a href="/online_quiz">Home</a></li>
-        <li><a href="/online_quiz/quiz">Quiz</a></li>
+        <li><a href="/quiz">Quiz</a></li>
       </ul>
     </nav>
     </div>
