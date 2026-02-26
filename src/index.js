@@ -9,9 +9,9 @@ import { Quiz } from './Components/Quiz';
 import NoPage from './Components/NoPage';
 
 const router = createBrowserRouter([
-  {path: "/online_quiz", element: <App /> , errorElement: <NoPage />  },
+  {path: "/", element: <App /> , errorElement: <NoPage />  },
   {path: "/quiz", element: <Quiz />}
-])
+], {basename: "/online_quiz"})
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
