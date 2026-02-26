@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/online_quiz/static/css/main.4d21cd47.css",
-    "main.js": "/online_quiz/static/js/main.20c0916f.js",
+    "main.js": "/online_quiz/static/js/main.a79c92d0.js",
     "static/js/453.b4aae5f6.chunk.js": "/online_quiz/static/js/453.b4aae5f6.chunk.js",
     "static/media/bible.jpg": "/online_quiz/static/media/bible.f0e6a1c4ebb9a1e9ff78.jpg",
     "index.html": "/online_quiz/index.html",
     "main.4d21cd47.css.map": "/online_quiz/static/css/main.4d21cd47.css.map",
-    "main.20c0916f.js.map": "/online_quiz/static/js/main.20c0916f.js.map",
+    "main.a79c92d0.js.map": "/online_quiz/static/js/main.a79c92d0.js.map",
     "453.b4aae5f6.chunk.js.map": "/online_quiz/static/js/453.b4aae5f6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4d21cd47.css",
-    "static/js/main.20c0916f.js"
+    "static/js/main.a79c92d0.js"
   ]
 }
